@@ -1,13 +1,14 @@
 ﻿using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.Identity.Web.Resource;
 using MyApiTwo.Models;
 
 namespace MyApiTwo.Controllers;
 
 [Authorize]
 //[Route("api/[controller]")]
-[Route("[controller]")]
+[Route("api/[controller]")]
 [ApiController]
 public class UsersController : ControllerBase
 {
@@ -27,7 +28,7 @@ public class UsersController : ControllerBase
     }
 
     [HttpGet("{id}")]
-    public ActionResult<User> GetUser(int id)
+    public ActionResult<User> GetUser(int id)  
     {
         var user = users.FirstOrDefault(u => u.Id == id);
         if (user == null)
@@ -46,6 +47,7 @@ public class UsersController : ControllerBase
     }
 
     [HttpPut("{id}")]
+    [RequiredScope(RequiredScopesConfigurationKey = "AzureAd:Scopes")]
     public ActionResult<User> UpdateUser(int id, User updatedUser)
     {
         var user = users.FirstOrDefault(u => u.Id == id);

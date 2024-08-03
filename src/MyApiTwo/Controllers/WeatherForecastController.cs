@@ -6,7 +6,7 @@ using Microsoft.AspNetCore.Authorization;
 namespace MyApiTwo.Controllers
 {
     [ApiController]
-    [Route("[controller]")]
+    [Route("api/[controller]")]
     [Authorize(Roles = "User")]
     public class WeatherForecastController : ControllerBase
     {

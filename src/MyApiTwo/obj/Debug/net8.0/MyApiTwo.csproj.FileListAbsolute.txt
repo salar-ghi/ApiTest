@@ -38,3 +38,4 @@ C:\Users\s.ghahremani\source\repos\Authentication\ApiTwo\src\MyApiTwo\bin\Debug\
 C:\Users\s.ghahremani\source\repos\Authentication\ApiTwo\src\MyApiTwo\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
 C:\Users\s.ghahremani\source\repos\Authentication\ApiTwo\src\MyApiTwo\bin\Debug\net8.0\Microsoft.IdentityModel.Tokens.dll
 C:\Users\s.ghahremani\source\repos\Authentication\ApiTwo\src\MyApiTwo\bin\Debug\net8.0\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\s.ghahremani\source\repos\Authentication\ApiTwo\src\MyApiTwo\obj\Debug\net8.0\MyApiTwo.sourcelink.json

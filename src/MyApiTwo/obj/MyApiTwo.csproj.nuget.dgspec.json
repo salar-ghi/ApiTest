@@ -54,6 +54,10 @@
               "target": "Package",
               "version": "[8.0.7, )"
             },
+            "Microsoft.Identity.Web": {
+              "target": "Package",
+              "version": "[3.0.1, )"
+            },
             "Microsoft.OpenApi": {
               "target": "Package",
               "version": "[1.6.16, )"
